@@ -48,6 +48,9 @@
                           This is not vaild email.
                         </div>
                       </div>
+                      <div class="error" v-if="!$v.register.email.isUnique">
+                          This email is already registered.
+                      </div>
                     </div>
                     <div class="form-floating mb-3">
                       <input
